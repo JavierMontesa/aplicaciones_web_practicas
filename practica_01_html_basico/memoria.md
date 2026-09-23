@@ -40,9 +40,9 @@ Repositorio con las memorias de las practicas del modulo de Aplicaciones web.
 **Curso:** 2º SMR
 
 ## Índice de practicas
-| Nº | Práctica | Memoria
-|
+
+| Nº | Práctica | Memoria |
 |----|----------------------------|--------------------------------------------------------------|
 | 1  | Introducción a HTML básico | [Ver memoria](./practica-01-html-basico/memoria.md) |
-| 2 | CSS y Flexbox | [Ver memoria](./practica-02-css-flexbox/memoria.md) |
-| 3 | Formularios web | [Ver memoria](./practica-03-formularios/memoria.md) |
+| 2  | CSS y Flexbox | [Ver memoria](./practica-02-css-flexbox/memoria.md) |
+| 3  | Formularios web | [Ver memoria](./practica-03-formularios/memoria.md) |
