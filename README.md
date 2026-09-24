@@ -2,4 +2,4 @@
 
 | Nº | Nombre | Enlace |
 |----|------------|----------------------------------|
-[Ver Memoria](./practica_01_html_basico/memoria.md) |
+| 1 | Practica 1 | [Ver Memoria](./practica_01_html_basico/memoria.md) |
