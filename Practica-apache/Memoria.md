@@ -97,4 +97,32 @@ Explorar la esructura de una configuracion.
 | `/etc/apache2/ports.conf` | Puertos en los que escucha Apache |
 | `/etc/apache2/sites-available/` | Sitios disponibles (definidos, no necesariamente activos) |
 
+Se comprueba que los ficheros de sites-enabled son enlaces simbólicos:
+
+<img width="948" height="81" alt="imagen" src="https://github.com/user-attachments/assets/ecaa8ba9-3674-4187-928f-9258d5184e8b" />
+
+❓Por qué Apache usa enlaces simbólicos entre los directorios *-available y *-enabled?
+
+Para separar la creación de una configuración de su activación.
+
+Haz siempre una copia de seguridad antes de modificar un fichero.
+
+<img width="863" height="62" alt="imagen" src="https://github.com/user-attachments/assets/6b2c9078-9971-4cbc-a8ec-38be0e8f3c6a" />
+
+Cambiar la pagina de inicio.
+
+<img width="889" height="70" alt="imagen" src="https://github.com/user-attachments/assets/a04f7892-7140-4031-8af6-456c927bb0e0" />
+
+Cambiar el puerto de escucha.
+
+<img width="523" height="355" alt="imagen" src="https://github.com/user-attachments/assets/7c8a51c7-90c1-4405-9d30-3ee86b3e4ea3" />
+<img width="943" height="339" alt="imagen" src="https://github.com/user-attachments/assets/bb14af14-01e7-4e6e-8805-9b9a986802b1" />
+
+Definir el nombre del servidor.
+
+<img width="945" height="289" alt="imagen" src="https://github.com/user-attachments/assets/67a7ce20-a356-4e75-b251-2ea8239e56c1" />
+
+Cambiar el correo del administrador.
+
+<img width="893" height="494" alt="imagen" src="https://github.com/user-attachments/assets/035cc31c-14f9-4be1-94d0-6cd817377549" />
 
