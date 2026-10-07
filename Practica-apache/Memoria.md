@@ -62,3 +62,27 @@ Comprueba la sintaxis de la configuración.
 
 <img width="947" height="84" alt="imagen" src="https://github.com/user-attachments/assets/c851b992-10a9-44b4-8906-07fb5511b763" />
 
+Muestra los sitios (virtual hosts) cargados.
+
+<img width="952" height="308" alt="imagen" src="https://github.com/user-attachments/assets/9b2d1f8c-ccb5-4ca1-b515-47f98e751013" />
+
+Lista los módulos cargados.
+
+<img width="890" height="253" alt="imagen" src="https://github.com/user-attachments/assets/d26121fe-4bbd-4681-8c28-e31407911dc8" />
+
+Activa / desactiva módulos.
+
+<img width="943" height="416" alt="imagen" src="https://github.com/user-attachments/assets/c628c185-3d9a-472f-9910-7f3e4b60f9e0" />
+
+Activa / desactiva sitios.
+
+<img width="551" height="176" alt="imagen" src="https://github.com/user-attachments/assets/152f1665-607e-4832-9e72-cdf4461cc0af" />
+
+Activa / desactiva fragmentos de configuración.
+
+<img width="948" height="173" alt="imagen" src="https://github.com/user-attachments/assets/6b367137-c1dd-4944-a172-95c315d20f58" />
+
+❓Cuándo conviene usar reload en lugar de restart?
+
+Conviene usarlo cundo se realizan cambios menores de configuracion.
+
