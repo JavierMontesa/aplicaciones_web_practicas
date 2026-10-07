@@ -23,3 +23,42 @@ Prueba terminal y navegador.
 
 <img width="535" height="203" alt="imagen" src="https://github.com/user-attachments/assets/c029d52b-90ec-4b19-a2d1-3c66d4151d4c" />
 <img width="851" height="710" alt="imagen" src="https://github.com/user-attachments/assets/7a66daa7-ec95-424e-a441-c184d80921c9" />
+
+Firewall.
+
+<img width="423" height="120" alt="imagen" src="https://github.com/user-attachments/assets/4f69206c-33e8-4cd5-8042-4e5ec4ff36c8" />
+
+❓Qué diferencia hay entre los perfiles Apache, Apache Full y Apache Secure?
+
+Apache-> instalacion basica..
+Apache-> se instala apache con mas modulos.
+Apache secure -> configuración orientada en https y seguridad.
+
+Inicio de servicio
+
+<img width="466" height="19" alt="imagen" src="https://github.com/user-attachments/assets/a703427f-fe6a-4d78-91bf-a37c850e785a" />
+
+Detiene el servicio.
+
+<img width="453" height="18" alt="imagen" src="https://github.com/user-attachments/assets/5eaacf85-67f5-41eb-8227-b135aa9955e5" />
+
+Reinicia.
+
+<img width="488" height="22" alt="imagen" src="https://github.com/user-attachments/assets/05c0feca-bba0-40db-921c-4a9c88f34dd2" />
+
+Recarga la configuración sin cortar conexiones.
+
+<img width="474" height="25" alt="imagen" src="https://github.com/user-attachments/assets/431c66f1-6014-4686-a51f-c6df1b36fcc9" />
+
+Arranque automático al iniciar el sistema.
+
+<img width="938" height="91" alt="imagen" src="https://github.com/user-attachments/assets/19cd7bc4-8889-4d1e-8060-382d2d4b4df6" />
+
+Desactiva el arranque automático.
+
+<img width="943" height="115" alt="imagen" src="https://github.com/user-attachments/assets/862d1e15-4ae4-474b-b1a8-804d4a75319a" />
+
+Comprueba la sintaxis de la configuración.
+
+<img width="947" height="84" alt="imagen" src="https://github.com/user-attachments/assets/c851b992-10a9-44b4-8906-07fb5511b763" />
+
