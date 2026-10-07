@@ -86,3 +86,15 @@ Activa / desactiva fragmentos de configuración.
 
 Conviene usarlo cundo se realizan cambios menores de configuracion.
 
+Explorar la esructura de una configuracion.
+
+<img width="657" height="251" alt="imagen" src="https://github.com/user-attachments/assets/15fa4f3e-db17-4ca5-93e3-71f0e5edae33" />
+
+
+| Ruta | Descripción |
+| :--- | :--- |
+| `/etc/apache2/apache2.conf` | Fichero de configuración principal |
+| `/etc/apache2/ports.conf` | Puertos en los que escucha Apache |
+| `/etc/apache2/sites-available/` | Sitios disponibles (definidos, no necesariamente activos) |
+
+
