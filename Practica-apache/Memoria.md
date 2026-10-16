@@ -126,3 +126,14 @@ Cambiar el correo del administrador.
 
 <img width="893" height="494" alt="imagen" src="https://github.com/user-attachments/assets/035cc31c-14f9-4be1-94d0-6cd817377549" />
 
+Personalizar pagina de error.
+
+<img width="961" height="393" alt="image" src="https://github.com/user-attachments/assets/f1f8507b-58ac-4a7a-a0f7-8274a5c16f75" />
+
+Modulos de apache.
+
+<img width="500" height="559" alt="image" src="https://github.com/user-attachments/assets/fe78c90a-f9ad-42a9-a6bf-21eb1e24df61" />
+
+¿Qué ocurre si desactivas un módulo del que depende otro?
+el sistema no te permitirá hacerlo directamente y te devolverá un mensaje de error.
+
