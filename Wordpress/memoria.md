@@ -17,7 +17,8 @@ systemctl is-active apache2 mariadb
 php -v
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 1: Conexión SSH y comprobación]**
+<img width="816" height="502" alt="Captura de 2026-10-28 09-08-45" src="https://github.com/user-attachments/assets/e9cfdaa2-d301-41d6-b650-4064332c1151" />
+
 
 **¿Qué dos "puertas" (programas y puertos) usas para trabajar con el servidor en esta práctica y para qué sirve cada una?**
 *   **SSH (puerto 22):** Se usa con el programa de Terminal para administrar el servidor de forma interna mediante comandos de texto (instalar, copiar, configurar).
@@ -38,7 +39,8 @@ ls /etc/apache2/sites-enabled/
 grep DocumentRoot /etc/apache2/sites-enabled/000-default.conf
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 2: Comandos y página por defecto de Apache]**
+<img width="808" height="98" alt="Captura de 2026-10-28 09-14-18" src="https://github.com/user-attachments/assets/72842323-0d36-4de3-b52a-d2285b6a5cb1" />
+
 
 **¿Qué diferencia hay entre desactivar un sitio con `a2dissite` y borrar sus ficheros?**
 *   Desactivar un sitio simplemente elimina el enlace de acceso directo en la carpeta `sites-enabled`, por lo que Apache deja de publicarlo, pero los ficheros de configuración y la web siguen guardados en el disco duro por si se quieren volver a usar en el futuro.
@@ -65,7 +67,9 @@ mariadb -u wp_user -p wordpress
 *   `CREATE USER 'wp_user'...`: Crea la "llave" o usuario de conexión y le asigna su propia contraseña.
 *   `GRANT ALL ON wordpress.*...`: Concede permisos totales a esa llave exclusivamente para usar el armario `wordpress` y ningún otro.
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 3: Creación de BD y entrada con usuario]** *(Asegúrate de que la contraseña esté tapada)*
+<img width="794" height="386" alt="Captura de 2026-10-28 09-20-38" src="https://github.com/user-attachments/assets/0ddc019b-b7b1-4349-a47b-d3fad1e1dd28" />
+
+
 
 **¿Por qué crees que WordPress usa su propio usuario wp_user con permiso solo sobre su base y no el usuario root de MariaDB?**
 *   Por seguridad. Si la web sufriera un ataque y descubrieran la contraseña de `wp_user`, el atacante solo tendría acceso a la base de datos de WordPress. Si usara el usuario root, tendría el control total de todas las bases de datos de todo el servidor.
@@ -90,7 +94,8 @@ sudo find /var/www/html -type f -exec chmod 644 {} \;
 ls -ld /var/www/html
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 4: Carpeta de WordPress y permisos]**
+<img width="645" height="69" alt="Captura de 2026-10-28 09-32-13" src="https://github.com/user-attachments/assets/5b21941a-a0e3-442c-8abe-fd805490f4e1" />
+
 
 **Explica qué hace cada uno de los comandos que acabas de ejecutar:**
 *   `wget` y `tar -xzf`: Descargan el archivo comprimido oficial de internet y lo extraen en la carpeta temporal.
@@ -103,11 +108,10 @@ ls -ld /var/www/html
 
 ---
 
-## 5. Terminar la instalación desde el navegador (la parte gráfica)
+<img width="963" height="1037" alt="Captura de 2026-10-28 09-47-15" src="https://github.com/user-attachments/assets/36470324-7670-445f-8e0d-3bfaa0dfe0cd" />
+
 
 Accedemos a la IP del servidor desde el navegador para completar la instalación gráfica, conectando WordPress a la base de datos MariaDB y creando nuestro usuario administrador.
-
-📸 **[ARRASTRA AQUÍ TU CAPTURA 5: Pantallas 3 y 5 de instalación y escritorio]**
 
 **¿Qué partes de la instalación has hecho en la terminal y cuáles en el navegador?**
 *   **En la terminal:** Preparamos Apache, creamos la base de datos, descargamos los archivos, los movimos y asignamos los permisos (toda la configuración técnica interna).
@@ -126,7 +130,8 @@ Creamos una entrada de prueba desde el panel de administración y verificamos en
 sudo mariadb wordpress -e "SHOW TABLES;"
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 6: Entrada publicada y SHOW TABLES]**
+<img width="1919" height="920" alt="Captura de 2026-10-28 11-24-43" src="https://github.com/user-attachments/assets/29b1919f-64e2-4db8-9d40-47e8dccaf6d7" />
+
 
 **¿Dónde guarda WordPress las entradas que escribes: en ficheros del servidor o en la base de datos? ¿Cómo lo has comprobado?**
 *   Las guarda en la base de datos, concretamente en la tabla `wp_posts` de MariaDB. Lo he comprobado ejecutando el comando `SHOW TABLES;` desde la terminal, lo que demuestra que el contenido (entradas, páginas, configuraciones) se almacena en tablas y no en archivos sueltos en el disco.
@@ -143,7 +148,8 @@ sudo nano /var/www/html/wp-config.php
 php -l /var/www/html/wp-config.php
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 7: Líneas en wp-config.php y comprobación]**
+<img width="957" height="740" alt="Captura de 2026-10-28 11-29-49" src="https://github.com/user-attachments/assets/524d0007-6b48-4a78-9d89-362d4a6a3f23" />
+
 
 ---
 
@@ -165,7 +171,8 @@ sudo systemctl restart apache2
 ls -la /var/www/html/.htaccess
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 8: Ajustes Apache, enlace bonito y subida 64MB]**
+<img width="1893" height="621" alt="Captura de 2026-10-28 11-44-40" src="https://github.com/user-attachments/assets/2262c33d-f42f-42c1-8bf9-d8b8330397bc" />
+
 
 **¿Por qué las direcciones "bonitas" dan error 404 si Apache no tiene permitido leer el fichero .htaccess?**
 *   Porque WordPress utiliza el archivo oculto `.htaccess` para guardar las reglas que traducen las rutas "bonitas" en consultas reales. Si Apache tiene bloqueada la directiva `AllowOverride`, ignora este archivo y, por tanto, no sabe interpretar la ruta solicitada, devolviendo un error 404 de página no encontrada.
@@ -183,7 +190,11 @@ sudo systemctl start mariadb
 systemctl is-active mariadb
 ```
 
-📸 **[ARRASTRA AQUÍ TU CAPTURA 9: Error en el navegador y web recuperada]**
+<img width="930" height="548" alt="Captura de 2026-10-28 11-45-36" src="https://github.com/user-attachments/assets/6dedd459-d25c-45b3-928d-d66510d01acc" />
+
+
+<img width="971" height="675" alt="Captura de 2026-10-28 11-46-20" src="https://github.com/user-attachments/assets/3f876fdf-1904-4dcb-a957-7f1583b09e84" />
+
 
 **Cuando WordPress muestra "Error al establecer una conexión con la base de datos", ¿qué dos cosas comprobarías y en qué orden?**
 *   **Primero:** Comprobaría si el servicio MariaDB está encendido y funcionando ejecutando `systemctl is-active mariadb`.
